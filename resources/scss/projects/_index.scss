@@ -1,0 +1,130 @@
+/* --------------------------------
+        PROJECT • INDEX
+-------------------------------- */
+
+.project-list {
+    
+    .create {
+        margin-bottom: 40px;
+
+        a {
+            padding: 8px 20px;
+            border-radius: 12px;
+            border: 3px solid $create;
+            font-weight: 600;
+            color: $create;
+            filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
+            &:hover {
+                background-color: $create;
+                color: $text2;
+            }
+        }
+    }
+    .table-project {
+        background-color: $table;
+        padding: 35px;
+        border-radius: 15px;
+        @extend %shadow;
+
+
+        table.custom-table {
+
+            th {color: $h_1;}
+
+            .thumb {
+                width: 120px;
+                height: 75px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                & img {
+                    width: 80%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+
+            td {vertical-align: middle;}
+        }
+
+        .manage {
+
+            a {
+                display: inline-block;
+        
+                .fa-sistrix {
+                    color: $show;
+                    padding: 8px;
+                    border: 1.5px solid $show;
+                    border-radius: 5px;
+                    &:hover {background-color: $show; color: $text2}
+                }
+                .fa-pen {
+                    color: $edit;
+                    padding: 8px;
+                    border: 1.5px solid $edit;
+                    border-radius: 5px;
+                    &:hover {background-color: $edit; color: $text2}
+                }
+                .fa-trash {
+                    color: $delete;
+                    padding: 8px;
+                    border: 1.5px solid $delete;
+                    border-radius: 5px;
+                    &:hover {background-color: $delete; color: $text2}
+                }
+            }
+
+
+            .holding {display: none;}
+                .delete__modale{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: $table;
+                    width: 500px;
+                    border-radius: 15px;
+                    padding: 35px;
+                    text-align: center;
+                    z-index: 200;
+                    @extend %shadow;
+                
+                    span.modale__exit {
+                        font-family: 'Ubuntu Condensed', sans-serif;
+                        position: absolute;
+                        right: 35px;
+                        top: 35px;
+                        font-size: 25px;
+                        font-weight: 900;
+                        color: $text3;
+                        cursor: pointer;
+                        &:hover {transform: scale(1.1);}
+                    }
+                    h4 {
+                        font-size: 26px;
+                        font-weight: 900;
+                        color: $h_1;
+                        margin-top: 60px;
+                    }
+                    form {text-align: center;}
+                    input.delete {
+                        display: inline-block;
+                        margin-top: 25px;
+                        border: none;
+                        padding: 10px 40px;
+                        border-radius: 15px;
+                        background-color: $btn;
+                        color: $text2;
+                        @extend %shadow;
+                        &:hover {background-color: $h_1; font-weight: 400;}
+ 
+                    }
+                
+                } 
+        }
+    
+    }
+}

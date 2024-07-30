@@ -1,0 +1,64 @@
+/* --------------------------------
+    * PROJECT • CREATE & EDIT
+-------------------------------- */
+
+.project-create,
+.project-edit {
+
+    .container {
+        padding: 40px 0 55px;
+
+        .back {
+            padding: 10px 0 35px;
+    
+            a {
+                padding: 8px 20px;
+                border-radius: 12px;
+                background-color: $back;
+                color: $text2;
+                @extend %shadow;      
+                &:hover {opacity: .9;}
+            }
+        }
+    
+        .add-project {
+    
+            padding: 35px;
+            background-color: rgba($table, .8);
+            border: 1px solid $table;
+            border-radius: 15px;
+            @extend %shadow;     
+        }
+        label {
+            color: $h_1;
+            font-weight: 500;
+        }
+
+        legend {
+            color: $h_1;
+            font-weight: 500;
+        }
+        fieldset {
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid $text2;
+            margin: 20px 0;
+
+            label {
+                color: $text1;
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+
+        .submit {
+            margin-top: 20px;
+            border: unset;
+            padding: 10px 20px;
+            border-radius: 15px;
+            background-color: $btn;
+            color: $text2;
+            &:hover {background-color: $h_1; font-weight: 500;}
+        }
+    }
+}

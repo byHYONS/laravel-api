@@ -1,0 +1,22 @@
+/* --------------------------------
+            TYPOGRAPHY
+-------------------------------- */
+@import './variables';
+
+//? typography:
+body {font-size: 24px;}
+
+h1, h2, h3, h4, h5, h6, {font-family: "Spectral", serif;}
+
+a, p, li, small, button, form, table {font-family: "Rajdhani", sans-serif;}
+
+th {font-size: 24px;}
+td {font-size: 20px;}
+
+
+h1 {font-size: 4rem;}
+h2 {font-size: 3rem;}
+h3 {font-size: 2rem;}
+h4 {font-size: 1rem;}
+h5 {font-size: 0.8rem;}
+h6 {font-size: 0.6rem;}

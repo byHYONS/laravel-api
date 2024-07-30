@@ -1,0 +1,19 @@
+@import "~bootstrap/scss/bootstrap";
+
+//? import file scss:
+@import './partials/reset';
+@import './partials/typography';
+@import './partials/utilities';
+@import './partials/variables';
+@import './partials/extende';
+@import './partials/mixin';
+@import './components/header';
+@import './components/footer';
+@import './components/welcome';
+@import './projects/index';
+@import './projects/show';
+@import './projects/create';
+@import './partials/common';
+
+
+// body {@include checkerboard(15px, $gray, $ligthGray)}
