@@ -22,7 +22,9 @@ class Project extends Model
     protected function imageFrontend(): Attribute
     {
         return new Attribute(
-            get: fn() => env('APP_FRONTEND_IMG_URL', 'http.//localhost') . $this->image,
+
+                get: fn() => $this->image ? env('APP_FRONTEND_IMG_URL', 'http.//localhost') . $this->image : null,
+
         );
     }
 
