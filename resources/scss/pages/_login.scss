@@ -1,0 +1,48 @@
+/* --------------------------------
+*   LOGIN • REGISTER • CONFIRM
+*    RESET • VERIFY • FORGOT
+-------------------------------- */
+.login,
+.register,
+.confirm,
+.reset,
+.verify,
+.forgot {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form {
+        background-color: $table;
+        border-radius: 15px;
+        @extend %shadow;
+
+        .form-header {
+            color: $h_1;
+            font-weight: 700;
+            padding: 45px 45px 15px;
+            
+        }
+        
+        .form-body {
+            padding: 15px 45px 45px;
+
+            .button {
+                padding: 8px 40px;
+                border-radius: 15px;
+                background-color: $btn;
+                border: none;
+                color: $text2;
+                @extend %shadow;
+                &:hover {background-color: $h_1; font-weight: 400;}
+            }
+            a.link {
+                margin-left: 10px;
+                color: $text1;
+                &:hover {color: $h_1; font-weight: 500;}
+            }
+
+        }
+    }
+}

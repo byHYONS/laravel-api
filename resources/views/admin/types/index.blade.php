@@ -3,7 +3,7 @@
     @extends('layouts.app')
     
     @section('content')
-        <div class="project-list py-75">
+        <div class="type-index py-75">
             <div class="container">
                 {{--? bottone crea --}}
                 <div class="create">

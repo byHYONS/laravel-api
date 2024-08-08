@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="project-create">
+<div class="type-create">
     <div class="container">
         {{--? bottone indietro --}}
         <div class="back">

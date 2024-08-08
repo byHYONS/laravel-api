@@ -23,11 +23,10 @@ class DatabaseSeeder extends Seeder
 
 
         //* per lanciare tutti i seeder presenti con un unico comando:
-        /*  $this->call([
+         $this->call([
                 ProjectSeeder::class,
                 TypeSeeder::class,
                 TechnologySeeder::class,
         ]);
-        */
     }
 }

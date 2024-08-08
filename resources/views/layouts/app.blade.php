@@ -43,9 +43,13 @@
         @include('shared.header')
 
         {{--? CONTENT --}}
+
         <main>
-                @yield('content')
+            
+            @yield('content')
+
         </main>
+    
 
         {{--? FOOTER --}}
         @include('shared.footer')

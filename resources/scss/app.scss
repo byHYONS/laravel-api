@@ -10,9 +10,11 @@
 @import './components/header';
 @import './components/footer';
 @import './components/welcome';
-@import './projects/index';
-@import './projects/show';
-@import './projects/create';
+@import './shared/index';
+@import './shared/show';
+@import './shared/create';
+@import './pages/login';
+@import './pages/dashboard';
 @import './partials/common';
 
 

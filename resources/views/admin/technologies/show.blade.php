@@ -4,7 +4,7 @@
     
     @section('content')
     
-    <div class="project-show p-5">
+    <div class="technology-show p-5">
         <div class="container">
             <div class="button-manage">
                 {{--? bottone indietro --}}
