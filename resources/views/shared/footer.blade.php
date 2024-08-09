@@ -7,7 +7,7 @@
                     <a class="navbar-brand" href="{{ url('/') }}">
                         <div class="logo_byhyons mt-5">
                             {{--? SVG --}}
-                            <svg width="50%" height="50%" viewBox="0 0 33334 14584" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;">
+                            <svg width="50%" height="30%" viewBox="0 0 33334 14584" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;">
                                 <g transform="matrix(4.16667,0,0,4.16667,0,0)">
                                     <g id="document" transform="matrix(1.95661,0,0,1.95661,4007.14,1750)">
                                         <g>
@@ -102,12 +102,12 @@
                 <p class="mt-5"> <span class="headline">Saguimi Su:</span> </p>
                 <div class="instagram logo-social">
                     <a href="https://www.instagram.com/byhyons/" target="_blank">
-                        <img src="/instagram.svg" alt="Instagram">
+                        <img src="/instagram.webp" alt="Instagram">
                     </a>
                 </div>
                 <div class="github logo-social">
                     <a href="https://github.com/byHYONS" target="_blank">
-                        <img src="/github.svg" alt="github">
+                        <img src="/github.webp" alt="github">
                     </a>
                 </div>
             </div>
