@@ -20,12 +20,12 @@
                     <a href="{{route('admin.types.edit', $type)}}" class="ml-45 mr-10">
                         <i class="fas fa-pen"></i>
                     </a>
-                    <a href="#" class="destroy">
+                    <a href="#" class="modale">
                         <i class="fas fa-trash"></i>
                     </a>
     
                     {{--? modale --}}
-                    <div class="delete__modale holding">
+                    <div class="modale__modale holding">
                         <span class="modale__exit">CHIUDI</span>
                         <h4>Sei sicuro di voler cancellare?</h4>
                         <p>La cancellazione è irreversibile</p>

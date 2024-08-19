@@ -38,11 +38,11 @@
                                             <a href="{{route('admin.types.edit', $type)}}" class="mr-10">
                                                 <i class="fas fa-pen"></i>
                                             </a>
-                                            <a href="{{$type->slug}}" class="destroy" data-slug="{{$type->slug}}">
+                                            <a href="{{$type->slug}}" class="modale" data-slug="{{$type->slug}}">
                                                 <i class="fas fa-trash"></i>
                                             </a>                                       
                                             {{--? modale --}}
-                                            <div class="delete__modale holding" id="modale-{{$type->slug}}">
+                                            <div class="modale__modale holding" id="modale-{{$type->slug}}">
                                                 <span class="modale__exit">CHIUDI</span>
                                                 <h4>Sei sicuro di voler cancellare?</h4>
                                                 <p>La cancellazione è irreversibile</p>

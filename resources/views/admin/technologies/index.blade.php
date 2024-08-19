@@ -38,11 +38,11 @@
                                             <a href="{{route('admin.technologies.edit', $technology)}}" class="mr-10">
                                                 <i class="fas fa-pen"></i>
                                             </a>
-                                            <a href="{{$technology->slug}}" class="destroy" data-slug="{{$technology->slug}}">
+                                            <a href="{{$technology->slug}}" class="modale" data-slug="{{$technology->slug}}">
                                                 <i class="fas fa-trash"></i>
                                             </a>                                       
                                             {{--? modale --}}
-                                            <div class="delete__modale holding" id="modale-{{$technology->slug}}">
+                                            <div class="modale__modale holding" id="modale-{{$technology->slug}}">
                                                 <span class="modale__exit">CHIUDI</span>
                                                 <h4>Sei sicuro di voler cancellare?</h4>
                                                 <p>La cancellazione è irreversibile</p>
