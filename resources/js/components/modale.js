@@ -2,19 +2,19 @@
         * MODALE DELETE
 *********************************** */
 
-const deleteBtn = document.querySelector('.destroy');
-const deleteBtns = document.querySelectorAll('.destroy');
+const actionBtn = document.querySelector('.modale');
+const actionBtns = document.querySelectorAll('.modale');
 const closeBtn = document.querySelector('.modale__exit');
 const closeBtns = document.querySelectorAll('.modale__exit');
-const modale = document.querySelector('.delete__modale');
+const modale = document.querySelector('.modale__modale');
 const overLay = document.querySelector('.screen');
 
-console.log(deleteBtn);
+console.log(actionBtn);
 
 //? per show page:
-if (deleteBtn) {
+if (actionBtn) {
 
-    deleteBtn.addEventListener('click', function () {
+    actionBtn.addEventListener('click', function () {
         modale.classList.remove('holding');
         document.body.classList.add('no-scroll');
         overLay.classList.remove('screen');
@@ -24,18 +24,18 @@ if (deleteBtn) {
 }
 
 //? per index page:
-deleteBtns.forEach(Button => {
+actionBtns.forEach(Button => {
     Button.addEventListener('click', function(e){
         e.preventDefault();
       
-        const buttonSlug = Button.getAttribute('data-slug');
-        console.log(`Cancella: ${buttonSlug}`);
+        const buttonId = Button.getAttribute('data-slug');
+        console.log(`Cancella: ${buttonId}`);
 
-        const modaleDelete = document.getElementById(`modale-${buttonSlug}`);
-        console.log(modaleDelete);
+        const modaleAction = document.getElementById(`modale-${buttonId}`);
+        console.log(modaleAction);
 
-        if (modaleDelete) {
-            modaleDelete.classList.remove('holding');
+        if (modaleAction) {
+            modaleAction.classList.remove('holding');
             document.body.classList.add('no-scroll');
             overLay.classList.remove('screen');
 
@@ -67,7 +67,7 @@ closeBtns.forEach(Button => {
     Button.addEventListener('click', function(e) {
         e.preventDefault();
 
-        const modale = Button.closest('.delete__modale');
+        const modale = Button.closest('.modale__modale');
         modale.classList.add('holding');
         document.body.classList.remove('no-scroll');
         overLay.classList.add('screen');
