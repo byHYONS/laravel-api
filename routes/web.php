@@ -43,7 +43,12 @@ Route::middleware('auth', 'verified')
     Route::resource('technologies', TechnologyController::class)
     //* chiamo la rotta con lo slug e non con l'id:
     ->parameters(['technologies' => 'technology:slug']);
-    
+
+    //? rotte per attivare o disattivare il progetto:
+    Route::patch('/projects/{project:slug}/activate', [ProjectController::class, 'activate'])
+    ->name('projects.activate');
+    Route::patch('/projects/{project:slug}/deactivate', [ProjectController::class, 'deactivate'])
+    ->name('projects.deactivate');   
     
 });
 
@@ -52,5 +57,6 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
 
 require __DIR__.'/auth.php';

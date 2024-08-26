@@ -156,4 +156,26 @@ class ProjectController extends Controller
         return redirect()->route('admin.projects.index');
 
     }
+
+    //? attivare e disattivare il progetto:
+        public function activate(Project $project)
+    {
+        $project->is_active = true;
+        $project->save();
+
+        return redirect()->route('admin.projects.index');
+    }
+
+    public function deactivate(Project $project)
+    {
+        $project->is_active = false;
+        $project->save();
+
+        return redirect()->route('admin.projects.index');
+    }
+
+
 }
+
+
+
