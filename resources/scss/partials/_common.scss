@@ -5,8 +5,9 @@
 main {
     // overflow: auto;
     width: 100vw;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-        url('../img/bg-body.jpg');
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+        url("../img/bg-body.jpg");
     min-height: calc(100vh - 100px);
     background-attachment: fixed;
     background-position: center;
@@ -22,10 +23,13 @@ main {
     }
 }
 
-
 //? per modale:
-.no-scroll {overflow: hidden;}
-.screen.holding {display: none;}
+.no-scroll {
+    overflow: hidden;
+}
+.screen.holding {
+    display: none;
+}
 .holding {
     display: block;
     position: fixed;
@@ -33,8 +37,6 @@ main {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba($color: $footer, $alpha: .7);
+    background-color: rgba($color: $footer, $alpha: 0.7);
     z-index: 100;
 }
-
-
